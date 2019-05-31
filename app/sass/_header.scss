@@ -1,0 +1,122 @@
+.header__full-size {
+  background: url("../img/header-bg.jpg") top center no-repeat;
+  background-size: cover;
+
+}
+
+.header {
+  padding-top: 30px;
+  &__logo {
+  }
+  &__menu {
+
+  }
+  &__title {
+    font-size: $font_size_main_title;
+    color: rgb(0, 148, 217);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding: 80px 0 70px 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__button {
+    margin: 80px 0 60px 0;
+    text-align: center;
+    &-link {
+      padding: 15px 25px;
+      @include media-breakpoint-down(sm) {
+        padding: 15px 12px;
+      }
+    }
+  }
+}
+
+.header__menu-list {
+  font-weight: 300;
+  &-item {
+    width: 23%;
+    border-top: 1px solid $main_color;
+    margin: 0 5px;
+    @include media-breakpoint-down(xl) {
+      border-top: none;
+    }
+    &:nth-child(8n+1) {
+      border-top: none;
+    }
+    &:nth-child(8n+2) {
+      border-top: none;
+    }
+    &:nth-child(8n+3) {
+      border-top: none;
+    }
+    &:nth-child(8n+4) {
+      border-top: none;
+    }
+  }
+  &-link {
+    padding: 0;
+    color: $main_color;
+    @include links(#000, #000, $main_color, #000, none);
+
+  }
+}
+.header__contacts {
+  text-align: right;
+  @include media-breakpoint-down(lg) {
+    text-align: left;
+  }
+  &-phone {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: flex-end;
+    @include media-breakpoint-down(lg) {
+      justify-content: flex-start;
+    }
+  }
+  .phone-icon {
+
+  }
+  .phone-number {
+    @include media-breakpoint-down(lg) {
+      font-size: 15px;
+    }
+  }
+  &-button {
+    .button-item {
+      @include media-breakpoint-down(lg) {
+        padding: 9px 9px;
+      }
+    }
+  }
+}
+.header__info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  &-item {
+    padding: 0 35px;
+  }
+  .info-item-wrap {
+    height: 60px;
+    overflow: hidden;
+  }
+  .info-item-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .info-item-title {
+    margin-bottom: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .info-item-text {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}

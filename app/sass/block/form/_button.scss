@@ -1,0 +1,19 @@
+.main-button {
+  background-image: linear-gradient(rgb(255,241,118) 0%, rgb(255,202,40) 100%);
+  box-shadow: 0 6px 0 1px rgb(216, 165, 8);
+  padding: 10px 15px;
+  font-family: $font_family_roboto;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-style: normal;
+  font-size: $font_size_main - 4;
+  color: #000;
+  line-height: 2.429;
+  border-radius: 32px;
+  &:hover {
+    background-image: none;
+    //background-color: #ffbd43;
+  }
+  @include links(#000, #000, #000, #000, #ffbd43);
+}
